@@ -1,0 +1,517 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>setup_test</RootNamespace>
+    <AssemblyName>setup_test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <TypeScriptToolsVersion>3.0</TypeScriptToolsVersion>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TypeScriptTarget>ES5</TypeScriptTarget>
+    <TypeScriptJSXEmit>None</TypeScriptJSXEmit>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptModuleKind>CommonJS</TypeScriptModuleKind>
+    <TypeScriptRemoveComments>False</TypeScriptRemoveComments>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>False</TypeScriptNoEmitOnError>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="tsconfig.json" />
+    <Content Include="theme.json" />
+    <TypeScriptCompile Include="Scripts\insite.config.ts" />
+    <TypeScriptCompile Include="Scripts\insite.content-pager.controller.ts" />
+    <TypeScriptCompile Include="Scripts\insite.content.directives.ts" />
+    <TypeScriptCompile Include="Scripts\insite.core.ts" />
+    <TypeScriptCompile Include="Scripts\insite.error-logger.ts" />
+    <TypeScriptCompile Include="Scripts\insite.guid-helper.ts" />
+    <TypeScriptCompile Include="Scripts\insite.jquery-extensions.ts" />
+    <TypeScriptCompile Include="Scripts\insite.module.ts" />
+    <TypeScriptCompile Include="Scripts\insite.nav.ts" />
+    <TypeScriptCompile Include="Scripts\insite.responsive.ts" />
+    <TypeScriptCompile Include="Scripts\polyfills.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.account-settings.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.account.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.account.service.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.change-account-password.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.create-account.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.delivery-method-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.delivery-method.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.external-providers.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.my-account-address.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.reset-password.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.select-customer.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.select-default-customer.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.select-pick-up-location-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.session.service.ts" />
+    <TypeScriptCompile Include="Scripts\Account\insite.sign-in.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Budget\insite.budget-calendar.service.ts" />
+    <TypeScriptCompile Include="Scripts\Budget\insite.budget.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Budget\insite.budget.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Budget\insite.budget.service.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.add-to-cart-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.address-error-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart-lines.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart-lines.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart-total-display.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart.models.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.cart.service.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.checkout-address.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.order-confirmation.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Cart\insite.review-and-pay.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.availability-by-warehouse-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.catalog.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.category-left-nav.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.category-left-nav.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.compare-products-carousel.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.compare-products-carousel.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.compare-products.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.compare-products.service.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.cross-sell-carousel.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.cross-sell-carousel.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.frequently-purchased.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.increment-images-loaded.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-availability-message.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-carousel.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-comparison-hopper.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-comparison-hopper.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-image-carousel.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-image-carousel.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-images.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-images.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-price-saving.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-price.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-price.service.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-sale-price-label.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-search.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-search.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product-subscription-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.product.service.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.recently-viewed.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.related-products.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.search.service.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.tell-a-friend.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.tell-a-friend.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Catalog\insite.warehouse.service.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.access-token.service.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.base-popup.service.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.base-upload.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.common.module.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.local-storage.service.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.query-string.service.ts" />
+    <TypeScriptCompile Include="Scripts\Common\insite.session-storage.service.ts" />
+    <TypeScriptCompile Include="Scripts\ContactUs\insite.contact-us.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.api-error.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.authentication-interceptor.factory.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.carousel.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.core.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.core.models.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.core.service.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.full-redirect.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.http-errors-interceptor.factory.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.http-wrapper.service.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.pager.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.pager.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.pagination.service.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.pickadate.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.popups.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.redirect-to-sign-in.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.settings.service.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.spinner.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Core\insite.spinner.service.ts" />
+    <TypeScriptCompile Include="Scripts\Currencies\insite.currency.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Customers\insite.customer.service.ts" />
+    <TypeScriptCompile Include="Scripts\Dashboard\insite.dashboard-links.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Dashboard\insite.dashboard-view.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Dashboard\insite.dashboard.service.ts" />
+    <TypeScriptCompile Include="Scripts\Dealers\insite.dealer-directions.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Dealers\insite.dealer-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Dealers\insite.dealer.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Dealers\insite.dealer.service.ts" />
+    <TypeScriptCompile Include="Scripts\Email\insite.email-subscription.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Email\insite.email.service.ts" />
+    <TypeScriptCompile Include="Scripts\Email\insite.share-entity-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Invoices\insite.invoice-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Invoices\insite.invoice-history-widget.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Invoices\insite.invoice-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Invoices\insite.invoice.service.ts" />
+    <TypeScriptCompile Include="Scripts\JobQuotes\insite.job-quote-details.controller.ts" />
+    <TypeScriptCompile Include="Scripts\JobQuotes\insite.job-quote.service.ts" />
+    <TypeScriptCompile Include="Scripts\JobQuotes\insite.my-job-quotes.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Languages\insite.language.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Layout\insite.header.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Layout\insite.layout.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Layout\insite.top-nav.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Messages\insite.message.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Messages\insite.message.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Messages\insite.message.service.ts" />
+    <TypeScriptCompile Include="Scripts\OrderApproval\insite.order-approval-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\OrderApproval\insite.order-approval-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\OrderApproval\insite.order-approval.service.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order-history-widget.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order-search-filter.model.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order-status-lookup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.order.service.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.recent-orders.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Orders\insite.recently-purchased.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Promotions\insite.promotion.service.ts" />
+    <TypeScriptCompile Include="Scripts\QuickOrder\insite.order-upload.controller.ts" />
+    <TypeScriptCompile Include="Scripts\QuickOrder\insite.quick-order-page.controller.ts" />
+    <TypeScriptCompile Include="Scripts\QuickOrder\insite.quick-order.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Requisitions\insite.requisition.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Requisitions\insite.requisition.service.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.my-quotes.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-confirmation.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-details.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-header-details.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-line-calculator-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-messages.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-parameter.model.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-past-expiration-date-confirmation-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.quote-proposed-details.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.recent-quotes.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.rfq.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.rfq.directives.ts" />
+    <TypeScriptCompile Include="Scripts\Rfq\insite.rfq.service.ts" />
+    <TypeScriptCompile Include="Scripts\RMA\insite.rma.controller.ts" />
+    <TypeScriptCompile Include="Scripts\SavedOrders\insite.saved-order-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\SavedOrders\insite.saved-order-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-animate.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-cookies.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-mocks.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-plus.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-resource.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-route.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-sanitize.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular-ui-router.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\angularjs\angular.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\ckeditor\ckeditor.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\google.analytics\ga.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\google.maps\google.maps-plus.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\google.maps\google.maps.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\jquery\jquery.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\jquery.validation\jquery-validation-unobtrusive.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\jquery.validation\jquery.validation.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\kendo\kendo.web.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\lodash\lodash.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\moment\moment-node.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\moment\moment.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\papaparse\papaparse.d.ts" />
+    <TypeScriptCompile Include="Scripts\Typings\xlsx\xlsx.d.ts" />
+    <TypeScriptCompile Include="Scripts\UserAdministration\insite.user-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\UserAdministration\insite.user-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\UserAdministration\insite.user-shipto.controller.ts" />
+    <TypeScriptCompile Include="Scripts\UserAdministration\insite.user.service.ts" />
+    <TypeScriptCompile Include="Scripts\Websites\insite.website.service.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.add-to-wishlist-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.characters-left-counter.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.copy-to-list-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.create-list-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.delete-list-popup.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.leave-list-popup.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.manage-sharing-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.my-list-detail.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.my-lists.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.share-details-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.share-list-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.shared-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.shared-list.directive.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.static-list.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.upload-to-list-popup.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.wishlist.controller.ts" />
+    <TypeScriptCompile Include="Scripts\Wishlists\insite.wishlist.service.ts" />
+    <TypeScriptCompile Include="Scripts\_typelite\insite.models.d.ts" />
+    <Content Include="Styles\base.scss" />
+    <Content Include="Styles\flexslider.css" />
+    <Content Include="Styles\foundation.css" />
+    <Content Include="Styles\normalize.css" />
+    <Content Include="Styles\template\category-list.scss" />
+    <Content Include="Styles\template\change-cust-ship-to.scss" />
+    <Content Include="Styles\template\checkout-addresses.scss" />
+    <Content Include="Styles\template\checkout-cart.scss" />
+    <Content Include="Styles\template\checkout-order-confirm.scss" />
+    <Content Include="Styles\template\checkout-review-pay.scss" />
+    <Content Include="Styles\template\compare-hopper.scss" />
+    <Content Include="Styles\template\create-account.scss" />
+    <Content Include="Styles\template\dealer-locator.scss" />
+    <Content Include="Styles\template\expired-link.scss" />
+    <Content Include="Styles\template\ma-addresses.scss" />
+    <Content Include="Styles\template\ma-assign-edit-shipto.scss" />
+    <Content Include="Styles\template\ma-budget-management.scss" />
+    <Content Include="Styles\template\ma-dashboard.scss" />
+    <Content Include="Styles\template\ma-frequently-purchased.scss" />
+    <Content Include="Styles\template\ma-invoice-details.scss" />
+    <Content Include="Styles\template\ma-invoice-history.scss" />
+    <Content Include="Styles\template\ma-job-quotes.scss" />
+    <Content Include="Styles\template\ma-my-list-details.scss" />
+    <Content Include="Styles\template\ma-my-lists.scss" />
+    <Content Include="Styles\template\ma-my-quotes.scss" />
+    <Content Include="Styles\template\ma-order-approval-details.scss" />
+    <Content Include="Styles\template\ma-order-approval.scss" />
+    <Content Include="Styles\template\ma-order-details.scss" />
+    <Content Include="Styles\template\ma-order-history.scss" />
+    <Content Include="Styles\template\ma-order-upload.scss" />
+    <Content Include="Styles\template\ma-quote-details.scss" />
+    <Content Include="Styles\template\ma-recently-purchased.scss" />
+    <Content Include="Styles\template\ma-requisition-approval.scss" />
+    <Content Include="Styles\template\ma-rma.scss" />
+    <Content Include="Styles\template\ma-saved-order-details.scss" />
+    <Content Include="Styles\template\ma-saved-orders.scss" />
+    <Content Include="Styles\template\ma-settings.scss" />
+    <Content Include="Styles\template\ma-static-list.scss" />
+    <Content Include="Styles\template\ma-user-administration.scss" />
+    <Content Include="Styles\template\ma-user-setup.scss" />
+    <Content Include="Styles\template\ma-wishlist.scss" />
+    <Content Include="Styles\template\news-list.scss" />
+    <Content Include="Styles\template\news-page.scss" />
+    <Content Include="Styles\template\product-category.scss" />
+    <Content Include="Styles\template\product-comparison.scss" />
+    <Content Include="Styles\template\product-detail.scss" />
+    <Content Include="Styles\template\product-list.scss" />
+    <Content Include="Styles\template\quick-order-2.scss" />
+    <Content Include="Styles\template\rfq.scss" />
+    <Content Include="Styles\template\select-pick-up-location.scss" />
+    <Content Include="Styles\template\sign-in.scss" />
+    <Content Include="Views\Directives\Account\AddressDisplay.cshtml" />
+    <Content Include="Views\Directives\Account\AddressEdit.cshtml" />
+    <Content Include="Views\Directives\Account\AddressField.cshtml" />
+    <Content Include="Views\Directives\Account\DeliveryMethod.cshtml" />
+    <Content Include="Views\Directives\Account\DeliveryMethodPopup.cshtml" />
+    <Content Include="Views\Directives\Account\FullAddressDisplay.cshtml" />
+    <Content Include="Views\Directives\Account\SelectDefaultCustomer.cshtml" />
+    <Content Include="Views\Directives\Account\SelectPickUpLocationPopup.cshtml" />
+    <Content Include="Views\Directives\Account\WarehouseInfo.cshtml" />
+    <Content Include="Views\Directives\Cart\AddressErrorPopup.cshtml" />
+    <Content Include="Views\Directives\Cart\AddToCartPopup.cshtml" />
+    <Content Include="Views\Directives\Cart\CartLines.cshtml" />
+    <Content Include="Views\Directives\Cart\CartTotalDisplay.cshtml" />
+    <Content Include="Views\Directives\Catalog\AvailabilityByWarehousePopup.cshtml" />
+    <Content Include="Views\Directives\Catalog\AvailabilityMessage.cshtml" />
+    <Content Include="Views\Directives\Catalog\BreadCrumb.cshtml" />
+    <Content Include="Views\Directives\Catalog\CrossSellCarousel.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductImageCarousel.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductImages.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductName.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductPrice.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductPriceSaving.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductSalePriceLabel.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductSubscriptionPopup.cshtml" />
+    <Content Include="Views\Directives\Catalog\ProductThumb.cshtml" />
+    <Content Include="Views\Directives\Catalog\QuantityBreakPricing.cshtml" />
+    <Content Include="Views\Directives\Catalog\SortedAttributeValueList.cshtml" />
+    <Content Include="Views\Directives\Catalog\UnitOfMeasureDisplay.cshtml" />
+    <Content Include="Views\Directives\Catalog\UnitOfMeasureSelectList.cshtml" />
+    <Content Include="Views\Directives\Common\ShareEntityField.cshtml" />
+    <Content Include="Views\Directives\Common\ShareEntityModal.cshtml" />
+    <Content Include="Views\Directives\Content\ContentPager.cshtml" />
+    <Content Include="Views\Directives\Core\ApiErrorPopup.cshtml" />
+    <Content Include="Views\Directives\Core\Pager.cshtml" />
+    <Content Include="Views\Directives\Core\Spinner.cshtml" />
+    <Content Include="Views\Directives\History\RecentOrders.cshtml" />
+    <Content Include="Views\Directives\List\CopyToListPopup.cshtml" />
+    <Content Include="Views\Directives\List\CreateListPopup.cshtml" />
+    <Content Include="Views\Directives\List\DeleteListPopup.cshtml" />
+    <Content Include="Views\Directives\List\LeaveListPopup.cshtml" />
+    <Content Include="Views\Directives\List\ManageSharingPopup.cshtml" />
+    <Content Include="Views\Directives\List\ShareDetailsPopup.cshtml" />
+    <Content Include="Views\Directives\List\SharedList.cshtml" />
+    <Content Include="Views\Directives\List\ShareListPopup.cshtml" />
+    <Content Include="Views\Directives\List\UploadToListPopup.cshtml" />
+    <Content Include="Views\Directives\Messages\MessageList.cshtml" />
+    <Content Include="Views\Directives\PdfViews\InvoiceDetails.cshtml" />
+    <Content Include="Views\Directives\PdfViews\ListDetails.cshtml" />
+    <Content Include="Views\Directives\PdfViews\OrderDetails.cshtml" />
+    <Content Include="Views\Directives\Rfq\ProposedDetailsGrid.cshtml" />
+    <Content Include="Views\Directives\Rfq\QuoteDetailHeader.cshtml" />
+    <Content Include="Views\Directives\Rfq\QuoteLineCalculator.cshtml" />
+    <Content Include="Views\Directives\Rfq\QuotePastExpirationDatePopup.cshtml" />
+    <Content Include="Views\Directives\Rfq\RecentQuotes.cshtml" />
+    <Content Include="Views\Directives\Rfq\RequestedDetailsGrid.cshtml" />
+    <Content Include="Views\Directives\Rfq\RfqMessageList.cshtml" />
+    <Content Include="Views\Directives\Rfq\RfqMessages.cshtml" />
+    <Content Include="Views\Directives\WishList\AddToWishlistPopup.cshtml" />
+    <Content Include="Views\Layouts\Standard.liquid" />
+    <Content Include="Views\LayoutSections\BodyEnd.liquid" />
+    <Content Include="Views\LayoutSections\BodyStart.liquid" />
+    <Content Include="Views\LayoutSections\HeadEnd.liquid" />
+    <Content Include="Views\LayoutSections\HeadStart.liquid" />
+    <Content Include="Views\NavigationMenus\Catalog\B2C.liquid" />
+    <Content Include="Views\NavigationMenus\Catalog\Standard.Liquid" />
+    <Content Include="Views\NavigationMenus\Content\B2C.liquid" />
+    <Content Include="Views\NavigationMenus\Content\Standard.liquid" />
+    <Content Include="Views\Pages\Legacy-ContentDiv.liquid" />
+    <Content Include="Views\Pages\Legacy-ExtraDivs.liquid" />
+    <Content Include="Views\Pages\Legacy-MissingDiv.liquid" />
+    <Content Include="Views\Pages\Legacy-SignIn.liquid" />
+    <Content Include="Views\Pages\Legacy-UploadLibraries.liquid" />
+    <Content Include="Views\Pages\NewsTemplate.liquid" />
+    <Content Include="Views\Pages\Standard.liquid" />
+    <Content Include="Views\Pages\Footer\Standard.liquid" />
+    <Content Include="Views\Pages\Header\Standard.liquid" />
+    <Content Include="Views\Widgets\AccountSettingsView\Standard.cshtml" />
+    <Content Include="Views\Widgets\Breadcrumb\Standard.cshtml" />
+    <Content Include="Views\Widgets\BudgetView\Standard.cshtml" />
+    <Content Include="Views\Widgets\Carousel\Standard.cshtml" />
+    <Content Include="Views\Widgets\CartView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ChangeAccountPasswordView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ChangeCustomerView\Standard.cshtml" />
+    <Content Include="Views\Widgets\CheckoutAddressView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ContactUsForm\Standard.cshtml" />
+    <Content Include="Views\Widgets\CreateAccountView\Standard.cshtml" />
+    <Content Include="Views\Widgets\CurrencySelector\Standard.cshtml" />
+    <Content Include="Views\Widgets\DealerDirectionsView\Standard.cshtml" />
+    <Content Include="Views\Widgets\DealerLocatorView\Standard.cshtml" />
+    <Content Include="Views\Widgets\DealerView\Standard.cshtml" />
+    <Content Include="Views\Widgets\EmailSubscription\Standard.cshtml" />
+    <Content Include="Views\Widgets\FourColumn\Standard.cshtml" />
+    <Content Include="Views\Widgets\FrequentlyPurchased\Standard.cshtml" />
+    <Content Include="Views\Widgets\HeaderView\B2C.cshtml" />
+    <Content Include="Views\Widgets\HeaderView\Standard.cshtml" />
+    <Content Include="Views\Widgets\Image\Standard.cshtml" />
+    <Content Include="Views\Widgets\InvoiceDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\InvoiceHistory\Standard.cshtml" />
+    <Content Include="Views\Widgets\InvoicesView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ItemLink\Standard.cshtml" />
+    <Content Include="Views\Widgets\ItemList\Standard.cshtml" />
+    <Content Include="Views\Widgets\JobQuoteDetailsView\Standard.cshtml" />
+    <Content Include="Views\Widgets\LanguageSelector\Standard.cshtml" />
+    <Content Include="Views\Widgets\LinkList\Standard.cshtml" />
+    <Content Include="Views\Widgets\MyAccountAddressView\Standard.cshtml" />
+    <Content Include="Views\Widgets\MyAccountView\Standard.cshtml" />
+    <Content Include="Views\Widgets\MyJobQuotesView\Standard.cshtml" />
+    <Content Include="Views\Widgets\MyListDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\MyListsView\Standard.cshtml" />
+    <Content Include="Views\Widgets\NavigationList\Standard.cshtml" />
+    <Content Include="Views\Widgets\NewsListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\NewsPageView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OneColumn\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderApprovalDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderApprovalListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderConfirmationView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderHistory\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderStatusLookupView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrdersView\Standard.cshtml" />
+    <Content Include="Views\Widgets\OrderUploadView\Standard.cshtml" />
+    <Content Include="Views\Widgets\PageTitle\Standard.cshtml" />
+    <Content Include="Views\Widgets\ProductCarousel\Standard.cshtml" />
+    <Content Include="Views\Widgets\ProductComparisonView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ProductDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ProductListView\B2C.cshtml" />
+    <Content Include="Views\Widgets\ProductListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\QuickOrder\Standard.cshtml" />
+    <Content Include="Views\Widgets\QuickOrderView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RecentlyPurchased\Standard.cshtml" />
+    <Content Include="Views\Widgets\RecentlyViewed\Standard.cshtml" />
+    <Content Include="Views\Widgets\RelatedProducts\Standard.cshtml" />
+    <Content Include="Views\Widgets\RequestRmaView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RequisitionView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ResetPasswordView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ReviewAndPayView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RfqConfirmationView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RfqMyQuotesView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RfqQuoteDetailsView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RfqRequestQuoteView\Standard.cshtml" />
+    <Content Include="Views\Widgets\RichContent\Standard.cshtml" />
+    <Content Include="Views\Widgets\SavedOrderDetailView\Standard.cshtml" />
+    <Content Include="Views\Widgets\SavedOrderListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\SignInView\Standard.cshtml" />
+    <Content Include="Views\Widgets\StaticListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\ThreeColumn\Standard.cshtml" />
+    <Content Include="Views\Widgets\TwoColumn\Standard.cshtml" />
+    <Content Include="Views\Widgets\UserListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\UserSetupShipToView\Standard.cshtml" />
+    <Content Include="Views\Widgets\UserSetupView\Standard.cshtml" />
+    <Content Include="Views\Widgets\WebCrossSells\Standard.cshtml" />
+    <Content Include="Views\Widgets\Wishlists\Standard.cshtml" />
+    <Content Include="Views\Widgets\WishListView\Standard.cshtml" />
+    <Content Include="Views\Widgets\Zone\Standard.cshtml" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>52642</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:52642/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

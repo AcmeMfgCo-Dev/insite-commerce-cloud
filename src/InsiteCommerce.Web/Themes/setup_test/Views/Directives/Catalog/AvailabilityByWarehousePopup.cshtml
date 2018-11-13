@@ -1,0 +1,20 @@
+﻿<div id="popup-availability-by-warehouse" class="reveal-modal popup-availability-by-warehouse" data-reveal data-reveal-init>
+    <div class="modal-wrap">
+        <h2>[% translate 'Warehouse Inventory' %]</h2>
+        <div class="pop-content">
+            <div class="row">
+                <table>
+                    <tr>
+                        <th>[% translate 'Warehouse' %]</th>
+                        <th>[% translate 'QTY' %]</th>
+                    </tr>
+                    <tr ng-repeat="warehouse in vm.warehouses | orderBy: ['description', 'name']">
+                        <td ng-bind="warehouse.description || warehouse.name"></td>
+                        <td ng-class="{ 'outstock': warehouse.qty === 0 }" ng-bind="warehouse.qty"></td>
+                    </tr>
+                </table>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>
