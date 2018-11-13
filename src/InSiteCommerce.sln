@@ -1,9 +1,12 @@
-
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InsiteCommerce.Web", "InsiteCommerce.Web\InsiteCommerce.Web.csproj", "{CE0FFFD9-65A7-4D40-9A5B-A8C9800E6FE3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extensions", "Extensions\Extensions.csproj", "{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "setup_test", "InSiteCommerce.Web\Themes\setup_test\setup_test.csproj", "{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,17 +14,23 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CE0FFFD9-65A7-4D40-9A5B-A8C9800E6FE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CE0FFFD9-65A7-4D40-9A5B-A8C9800E6FE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE0FFFD9-65A7-4D40-9A5B-A8C9800E6FE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE0FFFD9-65A7-4D40-9A5B-A8C9800E6FE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65DB69B0-1EBA-4DA9-B8C8-1798A1EF3424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EDF3A35-EB8F-4FE5-9D68-1941A5CD8750}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B72EFCE3-F788-46D8-8798-9A7105765547}
+	EndGlobalSection
 EndGlobal
-

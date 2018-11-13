@@ -1,0 +1,16 @@
+﻿<div>
+    <a id="tst_productDetail_imageZoom" href="javascript:;" class="pd-item-link" data-reveal-id="imgZoom">
+        <img id="{{vm.mainPrefix}}ProductImage" class="tst_productDetailPage_mainImage" ng-src="{{vm.selectedImage.mediumImagePath}}" alt="{{vm.selectedImage.altText}}">
+    </a>
+    <isc-product-image-carousel product-images="vm.product.productImages" selected-image="vm.selectedImage" prefix="main" max-tries="2000" get-carousel-width="vm.getMainImageWidth()"></isc-product-image-carousel>
+    <div id="imgZoom" class="product-detail reveal-modal modal-zoom" data-reveal data-reveal-init>
+        <div class="modal-wrap">
+            <img id="{{vm.zoomPrefix}}ProductImage" class="tst_productDetailPage_zoomImage imgZoom" ng-src="{{vm.selectedImage.largeImagePath ? vm.selectedImage.largeImagePath : vm.selectedImage.mediumImagePath}}" alt="{{vm.selectedImage.altText}}">
+            <div class="zoom-carousel-wrapper">
+                <isc-product-image-carousel ng-if="vm.showCarouselOnZoomModal" product-images="vm.product.productImages" selected-image="vm.selectedImage" prefix="zoom"
+                                            max-tries="2000" get-carousel-width="vm.getZoomImageWidth()"></isc-product-image-carousel>
+            </div>
+            <a class="close-reveal-modal">&#215;</a>
+        </div>
+    </div>
+</div>
